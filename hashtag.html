@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet"> 
+<link href="css/reset.css" rel="stylesheet">
+<title>Document</title>
+</head>
+<body>
+<div  class="container">
+    <div class="header">
+
+        <div  class="font14"><div>SHARE</div></div>
+        <div class="floatEnd fontForIcon textEnd verticalBottom"><i class="fas fa-bars " ></i> </div>
+   </div>
+
+    <div class="main">
+      <div class="search">
+          <div class="searchIcon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="searchBox">
+            <input type="text" placeholder="검색">
+          </div>
+      </div>
+      <div id="filter">
+        <div class="divideToHalf textCenter font14 currentPage">
+          <a href="#whole">전체</a>
+        </div>
+        <div class="divideToHalf textCenter font14 ">
+          <a href="#separate">개별</a>
+        </div>
+      </div>
+    </div>
+    <!-- whole -->
+    <div class="dRelative" id="whole">
+      <table class="shareTable">
+            
+        <tbody>
+          <tr>
+            <td><div><img src="source/img01.jpg" alt="영어공부"><span class="showHashtag">#영어공부</span></div></td>
+            <td><div><img src="source/img02.jpg" alt="잘먹기"><span class="showHashtag">#잘먹기</span></div></td>
+            <td><div><img src="source/img03.jpg" alt="산책"><span class="showHashtag">#산책</span></div></td>
+          </tr>
+          <tr>
+            <td><div><img src="source/img04.jpg" alt="잘먹기"><span class="showHashtag">#잘먹기</span></div></td>
+            <td><div><img src="source/img05.jpg" alt="도서관가기"><span class="showHashtag">#도서관가기</span></div></td>
+            <td><div><img src="source/img06.jpg" alt="물마시기"><span class="showHashtag">#물마시기</span></div></td>
+          </tr>
+          <tr>
+            <td><div><img src="source/img07.jpg" alt="공부"><span class="showHashtag">#공부</span></div></td>
+            <td><div><img src="source/img08.jpg" alt="코딩"><span class="showHashtag">#코딩</span></div></td>
+            <td><div><img src="source/img09.jpg" alt="도서관인증"><span class="showHashtag">#도서관인증</span></div></td>
+          </tr>
+          <tr>
+            <td><div><img src="source/img10.jpg" alt="차마시기"><span class="showHashtag">#영어공부</span></div></td>
+            <td><div><img src="source/img11.jpg" alt="산책"><span class="showHashtag">#영어공부</span></div></td>
+            <td><div><img src="source/img12.jpg" alt="영어단어"><span class="showHashtag">#영어공부</span></div></td>
+          </tr>
+        </tbody>
+
+        <div class="addContent">
+          <i class="fas fa-plus"></i>
+        </div>
+      </table>
+    </div>
+    <!-- separate -->
+    <div class="main" id="separate">
+      <div style="margin-bottom:18px;">
+        <div class="userProfileImg">
+          <img src="source/mainImg.jpg" alt="">
+        </div>
+        <span style="vertical-align:super;" class=" font14">
+          user
+        </span>
+        <div class="mainImg">
+          <img src="source/mainImg.jpg" alt="">
+        </div>
+       
+        <div style="padding:8px 0px;"class=" font14">
+          <i class="far fa-heart"></i> 100
+          &nbsp;
+          <i class="far fa-comment-alt"></i> 6
+        </div>
+        <div>
+          힘들지만 알찼다!
+        </div>
+        
+      </div>
+      <div style="margin-bottom:18px;">
+        <div class="userProfileImg">
+          <img src="source/mainImg.jpg" alt="">
+        </div>
+        <span style="vertical-align:super;" class=" font14">
+          user
+        </span>
+        <div class="mainImg">
+          <img src="source/mainImg.jpg" alt="">
+        </div>
+       
+        <div style="padding:8px 0px;"class=" font14">
+          <i class="far fa-heart"></i> 100
+          &nbsp;
+          <i class="far fa-comment-alt"></i> 6
+        </div>
+        <div>
+          힘들지만 알찼다!
+        </div>
+        
+      </div>
+     
+      <div class="addContent">
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    
+        
+    
+    <div class="nav">
+        <ul>
+            <li><a href="healthmanager.html"><i class="fas fa-home "></i></a></li>
+            <li><a href="challenge.html"><i class="fas fa-trophy "></i></a></li>
+            <li><a href="hashtag.html"><i class="fab fa-slack-hash active"></i></a></li>
+            <li><a href="calender.html"><i class="fas fa-calendar-alt "></i></a></li>
+            <li><a href="userInfo.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </div>
+</div> 
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>   
+<script>
+  $('#separate').hide();
+  $('#filter div').click(function() {
+    $(this).addClass('currentPage').siblings().removeClass('currentPage');
+    var currPage = $(this).children().attr("href");
+    var nextPage = $(this).siblings().children().attr("href"); 
+    $(currPage).show();
+    $(nextPage).hide();
+  });
+</script>
+</body>
+</html>

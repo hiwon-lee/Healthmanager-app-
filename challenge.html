@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet"> 
+<link href="css/reset.css" rel="stylesheet">
+<title>Document</title>
+</head>
+<body>
+<div  class="container">
+    <div class="header">
+
+        <div  class="font14"><div>CHALLENGE</div></div>
+        <div class="floatEnd fontForIcon textEnd verticalBottom"><i class="fas fa-bars " ></i> </div>
+   </div>
+        
+
+    
+    <div class="main">
+        <div class="hiddenMenu">
+            <div class="dRelative">
+                    <div>
+                        <div class="content floatEnd font14" >
+                            나만의 도전 만들기
+                        </div>
+                        <div class="content floatEnd font14">
+                            인기 도전 보기
+                        </div>
+                        <div class="content floatEnd font14">
+                            카테고리별 도전 찾기
+                        </div>
+                        <div class="content floatEnd font14">
+                            내 도전 상세보기
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="title font14">
+            나의 도전 현황
+        </div>
+        <div class="content newBackground">
+            
+            <div class="divideToHalf textCenter">진행중인 도전 수</div>
+            <div class="divideToHalf textCenter floatEnd">평균 달성율</div>
+        
+                <div class="divideToHalf textCenter fontForIcon">
+                    3개
+                </div>
+                <div class="divideToHalf textCenter fontForIcon blueHighlight">
+                    87%
+                </div>
+
+        </div>
+        <div class="textCenter slider">
+            <i class="fas fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+
+        </div>
+        <div class="title font14" >
+            도전 : 아침마다 산책!
+        </div>
+        <div class="content">
+            <div>
+                <span class="blueHighlight">15일째 진행중</span>
+                <span class="floatEnd">매일</span>
+            </div>
+            <div>
+                <span>
+                   나의 다짐
+                </span>
+                <div>
+                    "하루의 시작을 산책으로!"
+                </div>
+                
+            </div>
+            <div class="textEnd">
+                <a href="#">#산책</a>
+            </div>
+            <div >
+                <span>
+                    달성현황
+                </span>
+                <div>
+                    <div>성공한 날 : 10일</div>
+                    <div>실패한 날 : 5일</div>
+                    <div>성공율 : 66.6%</div>
+                </div>
+            </div>
+            <div class="textCenter font14">
+                <i class="fas fa-caret-up"></i>
+            </div>
+            
+            
+        </div>
+        <div class="title font14" >
+            도전 : 영어단어 10개 외우기
+        </div>
+        <div class="content">
+            <div>
+                <span class="blueHighlight">55일째 진행중</span>
+                <span class="floatEnd">월.화.수.목.금</span>
+            </div>
+            <div>
+                <span>
+                   나의 다짐
+                </span>
+                <div>
+                    "토익 끝내자"
+                </div>
+               
+            </div>
+            <div class="textEnd">
+                <a href="#">#영어단어</a>
+                <a href="#">#토익</a>
+            </div>
+        </div>
+        <div class="title font14" >
+            도전 : 헬스장 가기
+        </div>
+        <div class="content">
+            <div>
+                <span class="blueHighlight">7일째 진행중</span>
+                <span class="floatEnd">월.수.금</span>
+            </div>
+            <div>
+                <span>
+                   나의 다짐
+                </span>
+                <div>
+                    "토익 끝내자"
+                </div>
+               
+            </div>
+            <div class="textEnd">
+                <a href="#">#영어단어</a>
+                <a href="#">#토익</a>
+            </div>
+
+        </div>
+        <div class="addContent">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="addContent">
+            <i class="fas fa-minus"></i>
+        </div>
+        
+    </div>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="healthmanager.html"><i class="fas fa-home "></i></a></li>
+            <li><a href="challenge.html"><i class="fas fa-trophy active"></i></a></li>
+            <li><a href="hashtag.html"><i class="fab fa-slack-hash "></i></a></li>
+            <li><a href="calender.html"><i class="fas fa-calendar-alt "></i></a></li>
+            <li><a href="userInfo.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </div>
+</div>    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>  
+<script>
+    $('.fa-minus').parent().hide();
+   
+    $('.addContent').click(function() {
+        $(this).hide().siblings().show();
+        if($(this).children().is('.fa-plus')){
+            $('.hiddenMenu').show();
+        }else {
+            $('.hiddenMenu').hide();
+        }
+    });
+</script>
+</html>
